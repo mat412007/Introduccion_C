@@ -19,5 +19,7 @@ int main(int argc, char *argv[]){
     printf("\n");
     printf("Como se imprime el nombre del programa que se esta ejecutando?\n");
     printf("%%s, argv[0]\n");
+    printf("\n");
+    printf("https://la35.net/assets/files/practicas/algo-p0.pdf\n");
     return 0;
 }
