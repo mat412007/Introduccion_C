@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Respuestas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuestas de Introducción a C</title>
+</head>
+<body class="cuerpo">
+        <h1><u>Introducción a C.</u></h1>
+    <h2><a href="https://la35.net/assets/files/practicas/algo-p0.pdf" target="_blank">Link con las preguntas</a></h2>
+    <br>
+    <h3>¿Que es un lenguaje de programación?¿En qué consiste la diferencia entre un lenguaje de alto nivel y uno de bajo nivel?</h3>
+    <p>Un <b>lenguaje de programación</b> es el que usamos para comunicarnos con la computadora o el dispositivo que estemos usando, e indicarle lo que queremos hacerla hacer.<br>Uno de <b>alto nivel</b> se caracteriza por tener una estructura similar a la del lenguaje de los humanos, así que es más fácil escribirlo. <br>Uno de <b>bajo nivel</b> es más parecido al lenguaje de la computadora, el binario, es más universal, pero cuesta escribirlo.</p>
+    <br>
+    <h3>Nombrar 10 lenguajes de programación de alto nivel, 5 compilados y 5 interpretados.</h3>
+    <p><b>Lenguajes compilados:</b> C, C++, Erlang, Haskell, Rust. <br><b>Lenguajes interpretados:</b> PHP, Ruby, Python, JavaScript, Lua.</p>
+    <br>
+    <h3>¿Qué hace un compilador?</h3>
+    <p>Un <b>compilador</b> es un programa de computadora que transforma código escrito en lenguaje de alto nivel, a código ejecutable, <b>binario</b>. Toma lenguaje de programación, y lo traduce a 1 y 0.</p>
+    <br>
+    <h3>¿Cuáles son las 2 herramientas básicas que necesitamos para empezar a programar en un lenguaje compilado como C?</h3>
+    <p>Las 2 herramientas básicas que necesitamos son: <b>editor de código</b> y <b>compilador</b>.</p>
+    <br>
+    <h3>¿Cómo se escribe un comentario en C?</h3>
+    <p><b>// /**/</b></p>
+    <br>
+    <h3>¿Cómo insertar una nueva línea usando printf() en C?</h3>
+    <p><b>\n</b><p>
+    <br>
+    <h3>¿Cuál es la manera correcta de mostrar 100% usando printf()?</h3>
+    <p><b>printf("100%%")</b></p>
+    <br>
+    <h3>¿Cuál llamada printf() imprime el nombre del programa que se está ejecutando?</h3>
+    <p><b>printf("%s", argv[0])</b></p>
+    <br>
+    <h3>¿Qué salida produce la llamada a printf("%d%x%i", 32, 32, 32)?</h3>
+    <p><b>322032</b></p> <!--%x imprime el hexadecimal, y %i especifica un entero con signo-->
+    <br>
+    <h3>Indicar los errores de sintaxis de los siguientes programas.</h3>
+    <p>main(int argc, char *argv) { <br>printf("Hola, %s\n", argv[1]) <br>return 0;</p>
+    <p>Respuesta: 
+        <ul>
+            <li>int main</li>
+            <li>argv[]</li>
+            <li>argv[1]);</li>
+            <li>}</li>
+        </ul>   
+    </p>
+    <br>
+    <p>int main(argc, char *argv[]) { <br>printf("Hola, %d\n", argv[1]); <br>return 0; <br> }</p>
+    <p>Respuesta
+        <ul>
+            <li>int argc</li>
+            <li>%s</li>
+            <li>return 0;</li>
+        </ul>
+    </p>
+    <br>
+    <h3>Llenar los espacios en blanco.</h3>
+    <ol>
+        <li>Un lenguaje <b>de programación</b> se traduce a código máquina para generar un archivo ejecutable.</li>
+        <li>En C, cuándo la función <b>main</b> devuelve cero, estamos indicando que el programa terminó sin <b>errores</b>.</li>
+        <li>En la función printf el primer argumento se conoce como <b>cadena de formato</b>. Dentro del mismo se usa el caracter <b>%</b> para indicar los lugares donde se reemplazan valores o placeholders.</li>
+        <li>A menudo, los programas de los lenguajes <b>scripting</b> como Bash y Python se denominan <b>script</b>.</li>
+        <li>El comando <b>gcc hola.c</b> compila un archivo código <b>fuente</b> llamado hola.c a un ejecutable llamado hola.</li>
+    </ol>
+    <br>
+    <h3>Indicar verdadero o falso.</h3>
+    <ol>
+        <li>La función printf("mensaje") imprime a salida estándar el mensaje seguido de una nueva línea. <b>F</b></li>
+        <li>El compilador de C++ es g++ en Linux. <b>V</b></li>
+        <li>Java es un lenguaje interpretado. <b>F</b></li>
+        <li>JavaScript y Java son sinónimos. <b>F</b></li>
+        <li>El compilador no puede anticipar los errores en tiempo de ejecución. <b>F</b></li>
+        <li>Un error de tipeo a veces puede producir errores en tiempo de compilación. <b>V</b></li>
+    </ol>
+    <br>
+    <h3>Sin ejecutarlo en la computadora. ¿Cuál es la salida del siguiente programa?</h3>
+    <p>int main(void) { <br>printf("A "); <br>printf("B "); <br>printf("C "); <br>printf("D\n"); <br>return 0; <br> }</p>
+    <h4>Respuesta: A B C D</h4>
+    <br>
+    <h3>Sin ejecutarlo en la computadora. ¿Cuál es la salida del siguiente programa?</h3>
+    <p>int main(void) { <br>printf("0\t0\t0000\n"); <br>printf("1\t1\t0001\n"); <br>printf("2\t2\t0010\n"); <br>printf("3\t3\t0011\n"); <br>printf("4\t4\t0100\n"); <br>printf("5\t5\t0101\n"); <br>return 0; <br>}</p>
+    <h4>Respuesta: todo aparece en forma de lista, y los \t significa un espacio Tab.</h4>
+    <br>
+    <h3>Sin ejecutarlo en la computadora. ¿Cuál es la salida del siguiente programa?</h3>
+    <p>int n = 255; <br>printf("%d\t%x\n", n, n); <br>return 0; <br> }</p>
+    <h4>Respuesta: 255 ff</h4>
+    <br>
+    <h3><a href="http://127.0.0.1:5500">Ejercicios de código</a></h3>
+</body>
+</html>
